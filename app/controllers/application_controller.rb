@@ -1,5 +1,5 @@
 require './config/environment'
-require './app/models/status'
+require './app/models/model'
 
 class ApplicationController < Sinatra::Base
 
@@ -8,8 +8,8 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  # the get '/' action gets the data from our 'index.erb' file and takes us to our root url (localhost:9393/)
-  get '/' do
+  # the get '/' action gets the data from our 'index.erb' file and takes us to our root url (localhost:9393/) using Rack 
+  get '/' do 
     erb :index
   end
 
