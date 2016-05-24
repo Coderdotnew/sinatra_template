@@ -3,11 +3,18 @@
 <head>
   <title>Homepage</title>
   <!-- links to CSS stylesheet in the public directory -->
-  <link href="/css/index.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/index.css" >
 </head>
 <body> 
 
   <div class="container">
+
+    <h1>Post a status!</h1>
+    <form action="/status" method="POST">
+      <p>username: <input type="text" name="username"></p>
+      <p>status: <input type="text" name="status"></p>
+      <input type="submit">
+    </form>
 
   </div>
 
