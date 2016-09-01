@@ -1,5 +1,5 @@
 require './config/environment'
-require './app/models/model'
+require './app/models/status'
 
 class ApplicationController < Sinatra::Base
 
